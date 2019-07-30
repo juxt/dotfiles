@@ -1,0 +1,18 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# User bin is where we put common JUXT scripts
+export PATH=$HOME/bin:$PATH
+
+# CDPATH allows us to use jhq and get quick cd for free
+if [ -f /usr/bin/ghq ]; then
+  export CDPATH=$HOME/src/github.com/juxt:$HOME/src/github.com
+fi
+

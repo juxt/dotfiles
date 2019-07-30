@@ -1,0 +1,18 @@
+#!/bin/bash
+fullname () {
+	grep ^$USER\: /etc/passwd | cut -f5 -d:
+}
+
+echo $(fullname), welcome to JUXT!
+
+echo Initialising your environment
+echo -n Generating .gitconfig ...
+cat > $HOME/.gitconfig <<EOF
+[user]
+	name = "$(grep ^$USER\: /etc/passwd | cut -f5 -d:)"
+	email = "$USER@juxt.pro"
+[ghq]
+	root = "$HOME/src"
+EOF
+echo " done"
+cat $HOME/.gitconfig

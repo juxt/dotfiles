@@ -1,0 +1,2 @@
+#!/bin/sh
+xrandr --output eDP-1 --mode 3200x1800 --output DVI-I-1-1 --mode 3840x2160 --above eDP-1 --output DVI-I-2-2 --mode 3840x2160 --above eDP-1 --right-of DVI-I-1-1

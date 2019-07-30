@@ -1,0 +1,2 @@
+#!/bin/sh
+xrandr --output eDP-1 --mode 3200x1800 --output DP-1 --mode 1920x1080 --same-as eDP-1 --scale 1.666x1.666
