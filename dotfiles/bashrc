@@ -17,6 +17,6 @@ fi
 
 if [ -f /usr/bin/ruby ]; then
   export PATH=$GEM_HOME/bin:$PATH
-]
+fi
 
 export PATH=$HOME/src/github.com/juxt/dotfiles/bin:$PATH
