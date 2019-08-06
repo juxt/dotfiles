@@ -20,3 +20,12 @@ if [ -f /usr/bin/ruby ]; then
 fi
 
 export PATH=$HOME/src/github.com/juxt/dotfiles/bin:$PATH
+
+if type fzf >/dev/null; then
+    ghq-cd() {
+        repo="$(ghq list --full-path | fzf)"
+        if [ $? ]; then cd "$repo"; fi
+    }
+
+    bind '"\C-g": "ghq-cd\n"'
+fi
