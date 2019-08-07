@@ -26,6 +26,7 @@
  '(dired-dwim-target t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
+ '(nrepl-sync-request-timeout 30)
  '(package-selected-packages
    (quote
     (helm helm-ghq clj-refactor paredit magit spinner cider)))
