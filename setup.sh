@@ -7,15 +7,10 @@ LAPTOP_SPECIFIC="intel-ucode brightnessctl bluez bluez-utils blueman"
 WEB_DEV="firefox chromium lightdm lightdm-gtk-greeter"
 FONTS="ttf-liberation ttf-dejavu"
 WM="i3 dmenu"
-JAVA="jdk11-openjdk visualvm clojure rlwrap"
+JAVA="jdk11-openjdk visualvm clojure rlwrap leiningen"
 AUDIO="pulseaudio pavucontrol"
 
 YAY_PACKAGES="teams"
 
-sudo pacman -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO
+sudo pacman --needed -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO
 yay -S --noconfirm $YAY_PACKAGES
-
-# install leiningen
-curl -o lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
-chmod +x lein
-sudo mv lein /usr/local/bin/lein
