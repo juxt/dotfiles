@@ -14,3 +14,8 @@ YAY_PACKAGES="teams"
 
 sudo pacman -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO
 yay -S --noconfirm $YAY_PACKAGES
+
+# install leiningen
+curl -o lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+chmod +x lein
+sudo mv lein /usr/local/bin/lein
