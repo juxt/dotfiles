@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# this script is supposed to be run as root during the installation phase
+
 set -ex
 
 NETWORK_PACKAGES="dhcpcd netctl dialog wpa_supplicant openssh networkmanager network-manager-applet"
@@ -13,12 +15,4 @@ JAVA="jdk11-openjdk visualvm clojure rlwrap leiningen"
 AUDIO="pulseaudio pavucontrol"
 SECURITY="gnupg keybase archlinux-keyring"
 
-YAY_PACKAGES="teams"
-
-sudo pacman --noconfirm --needed -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO $SECURITY
-
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-yay -S --noconfirm $YAY_PACKAGES
+pacman --noconfirm --needed -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO $SECURITY
