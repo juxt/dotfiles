@@ -15,7 +15,7 @@ SECURITY="gnupg keybase archlinux-keyring"
 
 YAY_PACKAGES="teams"
 
-sudo pacman --needed -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO $SECURITY
+sudo pacman --noconfirm --needed -S $NETWORK_PACKAGES $XORG $DEV_PACKAGES $LAPTOP_SPECIFIC $WEB_DEV $FONTS $WM $JAVA $AUDIO $SECURITY
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
