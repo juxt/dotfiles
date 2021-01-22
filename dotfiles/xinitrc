@@ -5,5 +5,7 @@ export MOZ_USE_XINPUT2=1
 
 xautolock -time 15 -locker i3lock &
 
+xrdb .Xresources
+
 exec i3
 -
