@@ -11,7 +11,7 @@ xorg-apps
 mesa-libgl
 xf86-input-libinput
 libinput
-termite
+alacritty
 xorg-xrandr
 arandr
 man-db
