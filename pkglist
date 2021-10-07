@@ -16,6 +16,7 @@ xorg-xrandr
 arandr
 man-db
 man-pages
+vi
 vim
 emacs
 tmux
