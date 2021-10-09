@@ -1,3 +1,0 @@
-= JUXT Arch repo
-
-Please ensure only trusted builds are place here
