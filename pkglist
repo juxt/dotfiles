@@ -20,7 +20,6 @@ vi
 vim
 emacs
 tmux
-ack
 git
 the_silver_searcher
 asciidoctor
@@ -46,6 +45,5 @@ leiningen
 pulseaudio
 pavucontrol
 gnupg
-keybase
 archlinux-keyring
 iwd
